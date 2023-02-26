@@ -15,6 +15,7 @@ class ListOfAuditorsViewController: UIViewController {
         configureTitleTabItems()
         navigationController?.navigationBar.backgroundColor = UIColor(rgb: 0x0A2647)
         navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         
         // Do any additional setup after loading the view.
     }
