@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DC5977D29ABE18100407E55 /* AuditorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5977C29ABE18100407E55 /* AuditorDetailsViewController.swift */; };
+		2DC5977F29ABEF2700407E55 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5977E29ABEF2700407E55 /* PaddingLabel.swift */; };
 		2DCAB56229A2B4F50034D230 /* HexColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCAB56129A2B4F50034D230 /* HexColorsExtension.swift */; };
 		8F7392AA29A2638000EF813D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7392A929A2638000EF813D /* AppDelegate.swift */; };
 		8F7392AC29A2638000EF813D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7392AB29A2638000EF813D /* SceneDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DC5977C29ABE18100407E55 /* AuditorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditorDetailsViewController.swift; sourceTree = "<group>"; };
+		2DC5977E29ABEF2700407E55 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		2DCAB56129A2B4F50034D230 /* HexColorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorsExtension.swift; sourceTree = "<group>"; };
 		8F7392A629A2638000EF813D /* Extinguish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extinguish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7392A929A2638000EF813D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				8F7392B429A2638200EF813D /* LaunchScreen.storyboard */,
 				8F7392B729A2638200EF813D /* Info.plist */,
 				2DCAB56129A2B4F50034D230 /* HexColorsExtension.swift */,
+				2DC5977C29ABE18100407E55 /* AuditorDetailsViewController.swift */,
+				2DC5977E29ABEF2700407E55 /* PaddingLabel.swift */,
 			);
 			path = Extinguish;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DC5977F29ABEF2700407E55 /* PaddingLabel.swift in Sources */,
+				2DC5977D29ABE18100407E55 /* AuditorDetailsViewController.swift in Sources */,
 				8F7392AE29A2638000EF813D /* ListOfAuditorsViewController.swift in Sources */,
 				8F7392AA29A2638000EF813D /* AppDelegate.swift in Sources */,
 				8F7392AC29A2638000EF813D /* SceneDelegate.swift in Sources */,
