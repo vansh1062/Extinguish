@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DC2A24029AF3F840032043A /* HRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC2A23F29AF3F840032043A /* HRViewController.swift */; };
 		2DC5977D29ABE18100407E55 /* AuditorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5977C29ABE18100407E55 /* AuditorDetailsViewController.swift */; };
 		2DC5977F29ABEF2700407E55 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5977E29ABEF2700407E55 /* PaddingLabel.swift */; };
 		2DC5978129ABF07800407E55 /* Auditor Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5978029ABF07800407E55 /* Auditor Detail.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DC2A23F29AF3F840032043A /* HRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRViewController.swift; sourceTree = "<group>"; };
 		2DC5977C29ABE18100407E55 /* AuditorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditorDetailsViewController.swift; sourceTree = "<group>"; };
 		2DC5977E29ABEF2700407E55 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		2DC5978029ABF07800407E55 /* Auditor Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auditor Detail.swift"; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				2DC5978029ABF07800407E55 /* Auditor Detail.swift */,
 				2DC5978429ABF26800407E55 /* AuditorDetailTableViewCell.swift */,
 				2DF76CCF29AF0356009BA0CB /* LoginScreenViewController.swift */,
+				2DC2A23F29AF3F840032043A /* HRViewController.swift */,
 			);
 			path = Extinguish;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				8F7392AE29A2638000EF813D /* ListOfAuditorsViewController.swift in Sources */,
 				8F7392AA29A2638000EF813D /* AppDelegate.swift in Sources */,
 				2DC5978129ABF07800407E55 /* Auditor Detail.swift in Sources */,
+				2DC2A24029AF3F840032043A /* HRViewController.swift in Sources */,
 				8F7392AC29A2638000EF813D /* SceneDelegate.swift in Sources */,
 				2DC5978529ABF26800407E55 /* AuditorDetailTableViewCell.swift in Sources */,
 				2DCAB56229A2B4F50034D230 /* HexColorsExtension.swift in Sources */,

@@ -12,10 +12,11 @@ class AuditorDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Tanvi Gupta"
-        configureTitleTabItems()
+//        configureTitleTabItems()
         navigationController?.navigationBar.backgroundColor = UIColor(rgb: 0x0A2647)
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        view.backgroundColor = UIColor(rgb: 0xFFFBEB)
         
 
         // Do any additional setup after loading the view.

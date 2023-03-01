@@ -9,6 +9,14 @@ import UIKit
 
 class AuditorDetailTableViewCell: UITableViewCell {
 
+  
+    
+    @IBOutlet var profilePic: UIImageView!
+    
+    @IBOutlet var auditorID: UILabel!
+    
+    @IBOutlet var auditorName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,8 +27,4 @@ class AuditorDetailTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    @IBOutlet var auditorID: UILabel!
-    
-    @IBOutlet var auditorName: UILabel!
 }
