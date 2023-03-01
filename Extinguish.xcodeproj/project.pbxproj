@@ -16,7 +16,6 @@
 		2DF76CD029AF0356009BA0CB /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF76CCF29AF0356009BA0CB /* LoginScreenViewController.swift */; };
 		8F7392AA29A2638000EF813D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7392A929A2638000EF813D /* AppDelegate.swift */; };
 		8F7392AC29A2638000EF813D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7392AB29A2638000EF813D /* SceneDelegate.swift */; };
-		8F7392AE29A2638000EF813D /* ListOfAuditorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7392AD29A2638000EF813D /* ListOfAuditorsViewController.swift */; };
 		8F7392B129A2638000EF813D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7392AF29A2638000EF813D /* Main.storyboard */; };
 		8F7392B329A2638200EF813D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7392B229A2638200EF813D /* Assets.xcassets */; };
 		8F7392B629A2638200EF813D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7392B429A2638200EF813D /* LaunchScreen.storyboard */; };
@@ -33,7 +32,6 @@
 		8F7392A629A2638000EF813D /* Extinguish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extinguish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7392A929A2638000EF813D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F7392AB29A2638000EF813D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8F7392AD29A2638000EF813D /* ListOfAuditorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfAuditorsViewController.swift; sourceTree = "<group>"; };
 		8F7392B029A2638000EF813D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F7392B229A2638200EF813D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F7392B529A2638200EF813D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 			children = (
 				8F7392A929A2638000EF813D /* AppDelegate.swift */,
 				8F7392AB29A2638000EF813D /* SceneDelegate.swift */,
-				8F7392AD29A2638000EF813D /* ListOfAuditorsViewController.swift */,
 				8F7392AF29A2638000EF813D /* Main.storyboard */,
 				8F7392B229A2638200EF813D /* Assets.xcassets */,
 				8F7392B429A2638200EF813D /* LaunchScreen.storyboard */,
@@ -162,7 +159,6 @@
 				2DC5977F29ABEF2700407E55 /* PaddingLabel.swift in Sources */,
 				2DC5977D29ABE18100407E55 /* AuditorDetailsViewController.swift in Sources */,
 				2DF76CD029AF0356009BA0CB /* LoginScreenViewController.swift in Sources */,
-				8F7392AE29A2638000EF813D /* ListOfAuditorsViewController.swift in Sources */,
 				8F7392AA29A2638000EF813D /* AppDelegate.swift in Sources */,
 				2DC5978129ABF07800407E55 /* Auditor Detail.swift in Sources */,
 				2DC2A24029AF3F840032043A /* HRViewController.swift in Sources */,
