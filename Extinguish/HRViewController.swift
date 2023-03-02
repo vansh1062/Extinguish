@@ -44,15 +44,15 @@ class HRViewController: UIViewController , UITableViewDataSource , UITableViewDe
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return auditorList.count
+        return 1
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return auditorList.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = auditorListTable.dequeueReusableCell(withIdentifier: "auditorDetail", for: indexPath)
         let cityCell = cell as? AuditorDetailTableViewCell
-        let city = auditorList[indexPath.row]
+        let city = auditorList[indexPath.section]
         
         cell.backgroundColor = UIColor.white
         cell.layer.borderColor = UIColor.black.cgColor
@@ -63,6 +63,11 @@ class HRViewController: UIViewController , UITableViewDataSource , UITableViewDe
         cityCell?.auditorName?.text = city.name
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.01
+        
     }
     
     private func configureTitleTabItems(){

@@ -79,6 +79,15 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.01
+        
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return taskSummaryBasicDatas.count
     }
    
@@ -86,7 +95,7 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
         
         let cell = taskSummaryTable.dequeueReusableCell(withIdentifier: "taskSummaryBasicCell", for: indexPath)
         let taskcell = cell as? TaskSummaryTableViewCell
-        let task = taskSummaryBasicDatas[indexPath.row]
+        let task = taskSummaryBasicDatas[indexPath.section]
         
 //        cell.layer.borderWidth = 2
         cell.backgroundColor = UIColor.white
@@ -110,9 +119,7 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
         
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        1
-    }
+    
     
     private func configureTitleTabItems(){
         
