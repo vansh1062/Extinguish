@@ -45,14 +45,24 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
         super.viewDidLoad()
         title = "Task Summary"
         configureTitleTabItems()
+        
         navigationController?.navigationBar.backgroundColor = UIColor(rgb: 0x0A2647)
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         navigationController?.navigationBar.barTintColor = .white
         view.backgroundColor = UIColor(rgb: 0xFFFBEB)
+    
+        
         self.taskSummaryTable.dataSource = self
         self.taskSummaryTable.delegate = self
+        
+//        starStackView = UIStackView()
+//        starStackView.translatesAutoresizingMaskIntoConstraints = false
+//        starStackView.alignment = .center
+//        starStackView.axis = .horizontal
+//        starStackView.spacing = 5
         view.addSubview(floatingButton)
+        
         // Do any additional setup after loading the view.
 //        let header  = UIView(frame: CGRect(x: 0, y: 0, width: Int(view.frame.size.width), height: 50))
 //        taskSummaryTable.tableHeaderView = header
@@ -63,6 +73,7 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
         taskSummaryTable.deselectRow(at: indexPath, animated: true)
     }
     
+   
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
@@ -77,6 +88,7 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
         let taskcell = cell as? TaskSummaryTableViewCell
         let task = taskSummaryBasicDatas[indexPath.row]
         
+//        cell.layer.borderWidth = 2
         cell.backgroundColor = UIColor.white
           cell.layer.borderColor = UIColor.black.cgColor
           cell.layer.borderWidth = 1
@@ -103,6 +115,7 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
     }
     
     private func configureTitleTabItems(){
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "note.text"), style: .done, target: self, action: nil)
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "rectangle.portrait.and.arrow.right"), style: .done, target: self, action: nil)
        
@@ -110,14 +123,17 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
     private let floatingButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
 //        button.layer.masksToBounds = true
+        
         button.layer.cornerRadius = 30
         button.backgroundColor = UIColor(rgb: 0x0A2647)
         let image = UIImage(systemName: "plus" , withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium))
+        
         button.setImage(image, for: .normal)
         button.tintColor = .white
         button.setTitleColor(.white, for: .normal)
         button.layer.shadowRadius = 10
         button.layer.shadowOpacity = 0.3
+        
         return button
     }()
     
