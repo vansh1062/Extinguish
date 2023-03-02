@@ -602,52 +602,16 @@
                                     <constraint firstItem="xeR-2Z-BLu" firstAttribute="top" secondItem="sfK-IJ-EFA" secondAttribute="bottom" constant="3" id="asK-II-JVV"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2O-o4-pUR">
-                                <rect key="frame" x="0.0" y="394" width="393" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow.forward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aZv-bj-h95">
-                                        <rect key="frame" x="352" y="33" width="33" height="53"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task Details" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES2-Wp-bfP">
-                                        <rect key="frame" x="23" y="40" width="140" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZm-ab-Ywf">
-                                <rect key="frame" x="0.0" y="539" width="393" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow.forward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZgU-6h-UNW">
-                                        <rect key="frame" x="352" y="33" width="33" height="53"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="See Available Auditors" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfd-3s-37M">
-                                        <rect key="frame" x="23" y="40" width="261" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MAB-ym-KnC"/>
                         <color key="backgroundColor" red="1" green="0.98431372549999996" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="MAB-ym-KnC" firstAttribute="bottom" secondItem="zC2-Cd-I0q" secondAttribute="bottom" constant="593" id="4bZ-md-y37"/>
-                            <constraint firstItem="MAB-ym-KnC" firstAttribute="bottom" secondItem="dc0-gh-dyf" secondAttribute="bottom" constant="447" id="5tk-YY-9V0"/>
+                            <constraint firstItem="MAB-ym-KnC" firstAttribute="bottom" secondItem="dc0-gh-dyf" secondAttribute="bottom" constant="411" id="5tk-YY-9V0"/>
                             <constraint firstItem="MAB-ym-KnC" firstAttribute="trailing" secondItem="dc0-gh-dyf" secondAttribute="trailing" id="85E-t8-FKP"/>
                             <constraint firstItem="zC2-Cd-I0q" firstAttribute="top" secondItem="MAB-ym-KnC" secondAttribute="top" constant="38" id="Izh-TS-XyH"/>
                             <constraint firstItem="zC2-Cd-I0q" firstAttribute="leading" secondItem="MAB-ym-KnC" secondAttribute="leading" id="KDO-Dx-NiV"/>
-                            <constraint firstItem="dc0-gh-dyf" firstAttribute="top" secondItem="zC2-Cd-I0q" secondAttribute="bottom" constant="30" id="LTI-MG-UTU"/>
+                            <constraint firstItem="dc0-gh-dyf" firstAttribute="top" secondItem="zC2-Cd-I0q" secondAttribute="bottom" constant="44" id="LTI-MG-UTU"/>
                             <constraint firstItem="dc0-gh-dyf" firstAttribute="leading" secondItem="MAB-ym-KnC" secondAttribute="leading" id="M2K-ga-ihA"/>
                             <constraint firstItem="MAB-ym-KnC" firstAttribute="trailing" secondItem="zC2-Cd-I0q" secondAttribute="trailing" id="eGS-g5-Wpp"/>
                         </constraints>
