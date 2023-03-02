@@ -10,6 +10,16 @@ import UIKit
 class AuditorDetailsViewController: UIViewController {
 
     
+    @IBOutlet var employeeId: UIView!
+    
+    @IBOutlet var contactNo: UIView!
+    
+    @IBOutlet var emailId: UIView!
+    
+    
+    @IBOutlet var tasksAssignedView: UIView!
+    
+    @IBOutlet var locationView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +31,28 @@ class AuditorDetailsViewController: UIViewController {
         view.backgroundColor = UIColor(rgb: 0xFFFBEB)
         
 
+        employeeId.corners(_radius: 15)
+        employeeId.layer.borderColor = UIColor.black.cgColor
+        employeeId.layer.borderWidth = 1
+        
+        
+        contactNo.corners(_radius: 15)
+        contactNo.layer.borderColor = UIColor.black.cgColor
+        contactNo.layer.borderWidth = 1
+        
+        
+        emailId.corners(_radius: 15)
+        emailId.layer.borderColor = UIColor.black.cgColor
+        emailId.layer.borderWidth = 1
+        
+        
+        tasksAssignedView.corners(_radius: 15)
+        tasksAssignedView.layer.borderColor = UIColor.black.cgColor
+        tasksAssignedView.layer.borderWidth = 1
+        
+        locationView.corners(_radius: 15)
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -40,3 +72,14 @@ class AuditorDetailsViewController: UIViewController {
         }
 
 }
+
+//extension UIView {
+//    @discardableResult
+//    func corners( _radius:CGFloat ) -> UIView {
+//        self.layer.cornerRadius = _radius
+//        clipsToBounds = true
+//        self.layer.masksToBounds = true
+//        return self
+//    }
+//    
+//}
