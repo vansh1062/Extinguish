@@ -42,7 +42,13 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Task Summary"
+        configureTitleTabItems()
+        navigationController?.navigationBar.backgroundColor = UIColor(rgb: 0x0A2647)
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.barTintColor = .white
+        view.backgroundColor = UIColor(rgb: 0xFFFBEB)
         self.taskSummaryTable.dataSource = self
         self.taskSummaryTable.delegate = self
         // Do any additional setup after loading the view.
@@ -88,6 +94,10 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
         1
     }
     
+    private func configureTitleTabItems(){
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "note.text"), style: .done, target: self, action: nil)
+       
+        }
 }
 
 

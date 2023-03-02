@@ -10,7 +10,7 @@ import UIKit
 class HRViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
    
     
-    var auditorList = [ Auditor(empID: "12345", name: "Tanvi Gupta", phoneNumber: "9557146955", email: "tanvigupta129@gmail.com"),Auditor(empID: "12345", name: "Vansh Agarwal", phoneNumber: "9557146955", email: "tanvigupta129@gmail.com"),Auditor(empID: "12345", name: "Pratham Pandey", phoneNumber: "9557146955", email: "tanvigupta129@gmail.com"),Auditor(empID: "12345", name: "Trishalini", phoneNumber: "9557146955", email: "tanvigupta129@gmail.com")]
+    var auditorList = [ Auditor(empID: "12345", name: "Tanvi Gupta", phoneNumber: "9557146955", email: "tanvigupta129@gmail.com"),Auditor(empID: "12345", name: "Vansh Agarwal", phoneNumber: "9557146955", email: "tanvigupta129@gmail.com"),Auditor(empID: "12345", name: "Pratham Pandey", phoneNumber: "9557146955", email: "tanvigupta129@gmail.com"),Auditor(empID: "12345", name: "Thrishalini", phoneNumber: "9557146955", email: "tanvigupta129@gmail.com")]
   
   
     @IBOutlet var profilePic: UIImageView!
