@@ -51,6 +51,7 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
         view.backgroundColor = UIColor(rgb: 0xFFFBEB)
         self.taskSummaryTable.dataSource = self
         self.taskSummaryTable.delegate = self
+        view.addSubview(floatingButton)
         // Do any additional setup after loading the view.
 //        let header  = UIView(frame: CGRect(x: 0, y: 0, width: Int(view.frame.size.width), height: 50))
 //        taskSummaryTable.tableHeaderView = header
@@ -98,6 +99,25 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "note.text"), style: .done, target: self, action: nil)
        
         }
+    private let floatingButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
+//        button.layer.masksToBounds = true
+        button.layer.cornerRadius = 30
+        button.backgroundColor = UIColor(rgb: 0x0A2647)
+        let image = UIImage(systemName: "plus" , withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium))
+        button.setImage(image, for: .normal)
+        button.tintColor = .white
+        button.setTitleColor(.white, for: .normal)
+        button.layer.shadowRadius = 10
+        button.layer.shadowOpacity = 0.3
+        return button
+    }()
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        floatingButton.frame = CGRect(x: view.frame.size.width - 70, y: view.frame.size.height - 150 , width: 60, height: 60 )
+        
+    }
 }
 
 
