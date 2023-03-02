@@ -402,11 +402,11 @@
             </objects>
             <point key="canvasLocation" x="2493.8931297709923" y="831.69014084507046"/>
         </scene>
-        <!--Item-->
+        <!--HR-->
         <scene sceneID="hP2-nd-pwJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yMF-VD-3UR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="figure.stand" catalog="system" id="fAq-kn-lY2"/>
+                    <tabBarItem key="tabBarItem" title="HR" image="figure.stand" catalog="system" selectedImage="figure.stand" id="fAq-kn-lY2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ila-hv-nNz">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -431,6 +431,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemGrayColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="yMF-VD-3UR" kind="relationship" relationship="viewControllers" id="Ua0-YZ-bgN"/>
