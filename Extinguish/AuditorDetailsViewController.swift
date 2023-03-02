@@ -9,6 +9,8 @@ import UIKit
 
 class AuditorDetailsViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Tanvi Gupta"

@@ -119,7 +119,7 @@
                                     <outlet property="delegate" destination="NZ9-Qi-jB9" id="yve-aa-Sod"/>
                                 </connections>
                             </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Of Auditors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8U6-f2-8fp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Of Auditors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8U6-f2-8fp">
                                 <rect key="frame" x="16" y="170" width="361" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="eyS-24-1XO"/>
@@ -130,6 +130,7 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DNp-4l-7nK">
                                 <rect key="frame" x="16" y="218" width="361" height="551"/>
+                                <color key="backgroundColor" red="1" green="0.98431372549999996" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="separatorColor" red="1" green="0.98431372549999996" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="auditorDetail" rowHeight="90" id="gQ2-L4-9mh" customClass="AuditorDetailTableViewCell" customModule="Extinguish" customModuleProvider="target">
@@ -456,7 +457,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oqm-jq-1FC">
                                 <rect key="frame" x="8" y="214" width="377" height="555"/>
+                                <color key="backgroundColor" red="1" green="0.98431372549999996" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.98431372549019602" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="1" green="0.98431372549019602" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskSummaryBasicCell" rowHeight="88" id="Bx8-uh-psk" customClass="TaskSummaryTableViewCell" customModule="Extinguish" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="377" height="88"/>
@@ -542,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="be0-CZ-shg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037.4045801526718" y="1543.661971830986"/>
+            <point key="canvasLocation" x="2005" y="1608"/>
         </scene>
         <!--Task Detail View Controller-->
         <scene sceneID="xUX-Pd-uFs">
@@ -663,7 +666,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAW-by-dUI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3040.4580152671756" y="1553.5211267605634"/>
+            <point key="canvasLocation" x="3033" y="1608"/>
         </scene>
         <!--Item-->
         <scene sceneID="Rfe-vi-E4F">
@@ -682,7 +685,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DY4-V6-cqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901.52671755725191" y="1608.4507042253522"/>
+            <point key="canvasLocation" x="944" y="1608"/>
         </scene>
     </scenes>
     <resources>

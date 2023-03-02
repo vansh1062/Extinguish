@@ -53,6 +53,12 @@ class HRViewController: UIViewController , UITableViewDataSource , UITableViewDe
         let cell = auditorListTable.dequeueReusableCell(withIdentifier: "auditorDetail", for: indexPath)
         let cityCell = cell as? AuditorDetailTableViewCell
         let city = auditorList[indexPath.row]
+        
+        cell.backgroundColor = UIColor.white
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 1
+        cell.layer.cornerRadius = 8
+        cell.clipsToBounds = true
         cityCell?.auditorID?.text = "ID No - " + city.empID
         cityCell?.auditorName?.text = city.name
         
@@ -61,6 +67,7 @@ class HRViewController: UIViewController , UITableViewDataSource , UITableViewDe
     
     private func configureTitleTabItems(){
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "figure.stand"), style: .done, target: self, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "rectangle.portrait.and.arrow.right"), style: .done, target: self, action: nil)
        
         }
   

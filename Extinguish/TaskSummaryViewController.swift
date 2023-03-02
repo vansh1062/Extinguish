@@ -20,6 +20,7 @@ struct taskSummaryBasicData {
 class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITableViewDelegate{
 
     
+    let cellSpacingHeight: CGFloat = 5
     
     
     
@@ -69,12 +70,18 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return taskSummaryBasicDatas.count
     }
+   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = taskSummaryTable.dequeueReusableCell(withIdentifier: "taskSummaryBasicCell", for: indexPath)
         let taskcell = cell as? TaskSummaryTableViewCell
         let task = taskSummaryBasicDatas[indexPath.row]
         
+        cell.backgroundColor = UIColor.white
+          cell.layer.borderColor = UIColor.black.cgColor
+          cell.layer.borderWidth = 1
+          cell.layer.cornerRadius = 8
+          cell.clipsToBounds = true
         taskcell?.taskIdLabel?.text = "Task ID :" + task.taskID
 //        taskcell?.taskIdLabel?.text =  task.taskID
 //        taskcell?.priorityLabel?.text = "Priority :" + task.priority
@@ -97,6 +104,7 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
     
     private func configureTitleTabItems(){
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "note.text"), style: .done, target: self, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "rectangle.portrait.and.arrow.right"), style: .done, target: self, action: nil)
        
         }
     private let floatingButton: UIButton = {
