@@ -2,13 +2,21 @@
 //  TaskSummaryTableViewCell.swift
 //  Extinguish
 //
-//  Created by Tanvi Gupta on 02/03/23.
+//  Created by Thrishalini on 28/02/23.
 //
 
 import UIKit
 
 class TaskSummaryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var taskIdLabel: UILabel!
+    
+    
+    @IBOutlet weak var priorityLabel: UILabel!
+    
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
