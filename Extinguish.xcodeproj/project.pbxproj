@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D4133A129B06EBF000BBF6F /* TaskSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4133A029B06EBF000BBF6F /* TaskSummaryViewController.swift */; };
+		2D4133A329B06EF9000BBF6F /* TaskSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4133A229B06EF9000BBF6F /* TaskSummaryTableViewCell.swift */; };
 		2DC2A24029AF3F840032043A /* HRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC2A23F29AF3F840032043A /* HRViewController.swift */; };
 		2DC5977D29ABE18100407E55 /* AuditorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5977C29ABE18100407E55 /* AuditorDetailsViewController.swift */; };
 		2DC5977F29ABEF2700407E55 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5977E29ABEF2700407E55 /* PaddingLabel.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D4133A029B06EBF000BBF6F /* TaskSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSummaryViewController.swift; sourceTree = "<group>"; };
+		2D4133A229B06EF9000BBF6F /* TaskSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSummaryTableViewCell.swift; sourceTree = "<group>"; };
 		2DC2A23F29AF3F840032043A /* HRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRViewController.swift; sourceTree = "<group>"; };
 		2DC5977C29ABE18100407E55 /* AuditorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditorDetailsViewController.swift; sourceTree = "<group>"; };
 		2DC5977E29ABEF2700407E55 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				2DC5978429ABF26800407E55 /* AuditorDetailTableViewCell.swift */,
 				2DF76CCF29AF0356009BA0CB /* LoginScreenViewController.swift */,
 				2DC2A23F29AF3F840032043A /* HRViewController.swift */,
+				2D4133A029B06EBF000BBF6F /* TaskSummaryViewController.swift */,
+				2D4133A229B06EF9000BBF6F /* TaskSummaryTableViewCell.swift */,
 			);
 			path = Extinguish;
 			sourceTree = "<group>";
@@ -161,9 +167,11 @@
 				2DF76CD029AF0356009BA0CB /* LoginScreenViewController.swift in Sources */,
 				8F7392AA29A2638000EF813D /* AppDelegate.swift in Sources */,
 				2DC5978129ABF07800407E55 /* Auditor Detail.swift in Sources */,
+				2D4133A329B06EF9000BBF6F /* TaskSummaryTableViewCell.swift in Sources */,
 				2DC2A24029AF3F840032043A /* HRViewController.swift in Sources */,
 				8F7392AC29A2638000EF813D /* SceneDelegate.swift in Sources */,
 				2DC5978529ABF26800407E55 /* AuditorDetailTableViewCell.swift in Sources */,
+				2D4133A129B06EBF000BBF6F /* TaskSummaryViewController.swift in Sources */,
 				2DCAB56229A2B4F50034D230 /* HexColorsExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
