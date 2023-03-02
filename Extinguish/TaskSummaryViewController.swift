@@ -2,28 +2,92 @@
 //  TaskSummaryViewController.swift
 //  Extinguish
 //
-//  Created by Tanvi Gupta on 02/03/23.
+//  Created by vansh agarwal on 19/02/23.
 //
 
 import UIKit
 
-class TaskSummaryViewController: UIViewController {
+struct taskSummaryBasicData {
+    var taskID = ""
+    var priority = ""
+    var location = ""
+    
+    
+}
 
+
+
+class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITableViewDelegate{
+
+    
+    
+    
+    
+    @IBOutlet var taskSummaryTable: UITableView!
+    
+    
+    var taskSummaryBasicDatas : [taskSummaryBasicData] =
+    [taskSummaryBasicData(taskID: "zxzabsd",priority: "Immediate",location: "Nungumbakam"),
+     taskSummaryBasicData(taskID: "3vXrXv",priority: "Normal",location: "Chengalpet"),
+     taskSummaryBasicData(taskID: "4yyy5if",priority: "Normal",location: "Triplicane"),
+     taskSummaryBasicData(taskID: "dy65vko",priority: "Normal",location: "Mylapore"),
+     taskSummaryBasicData(taskID: "dy65vko",priority: "Normal",location: "Mylapore"),
+     taskSummaryBasicData(taskID: "dy65vko",priority: "Normal",location: "Mylapore"),
+     taskSummaryBasicData(taskID: "dy65vko",priority: "Normal",location: "Mylapore"),
+     taskSummaryBasicData(taskID: "dy65vko",priority: "Normal",location: "Mylapore")
+     
+    ]
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.taskSummaryTable.dataSource = self
+        self.taskSummaryTable.delegate = self
         // Do any additional setup after loading the view.
+//        let header  = UIView(frame: CGRect(x: 0, y: 0, width: Int(view.frame.size.width), height: 50))
+//        taskSummaryTable.tableHeaderView = header
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        taskSummaryTable.deselectRow(at: indexPath, animated: true)
     }
-    */
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return taskSummaryBasicDatas.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = taskSummaryTable.dequeueReusableCell(withIdentifier: "taskSummaryBasicCell", for: indexPath)
+        let taskcell = cell as? TaskSummaryTableViewCell
+        let task = taskSummaryBasicDatas[indexPath.row]
+        
+        taskcell?.taskIdLabel?.text = "Task ID :" + task.taskID
+//        taskcell?.taskIdLabel?.text =  task.taskID
+//        taskcell?.priorityLabel?.text = "Priority :" + task.priority
+        taskcell?.priorityLabel?.text = task.priority
+//        taskcell?.locationLabel?.text = "Location :" + task.location
+        taskcell?.locationLabel?.text = "📍 "+task.location
+        
+        
+        return cell
+        
+        
+        
+        
+        
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
+    }
+    
 }
+
+
