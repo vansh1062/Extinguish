@@ -10,7 +10,7 @@ import UIKit
 class HRViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
    
     
-    var auditorList = [ Auditor(empID: "12345", name: "Tanvi Gupta", phoneNumber: "9557146955", email: "tanvigupta129@gmail.com"),Auditor(empID: "12345", name: "Vansh Agarwal", phoneNumber: "9557146955", email: "tanvigupta129@gmail.com"),Auditor(empID: "12345", name: "Pratham Pandey", phoneNumber: "9557146955", email: "tanvigupta129@gmail.com"),Auditor(empID: "12345", name: "Thrishalini", phoneNumber: "9557146955", email: "tanvigupta129@gmail.com")]
+    var auditorList = DataModel().auditorList
   
   
     @IBOutlet var profilePic: UIImageView!
@@ -77,15 +77,7 @@ class HRViewController: UIViewController , UITableViewDataSource , UITableViewDe
         }
   
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
     private let floatingButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
 //        button.layer.masksToBounds = true

@@ -73,13 +73,3 @@ class AuditorDetailsViewController: UIViewController {
 
 }
 
-//extension UIView {
-//    @discardableResult
-//    func corners( _radius:CGFloat ) -> UIView {
-//        self.layer.cornerRadius = _radius
-//        clipsToBounds = true
-//        self.layer.masksToBounds = true
-//        return self
-//    }
-//    
-//}

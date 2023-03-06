@@ -7,13 +7,7 @@
 
 import UIKit
 
-struct taskSummaryBasicData {
-    var taskID = ""
-    var priority = ""
-    var location = ""
-    
-    
-}
+
 
 
 
@@ -27,17 +21,7 @@ class TaskSummaryViewController: UIViewController ,UITableViewDataSource, UITabl
     @IBOutlet var taskSummaryTable: UITableView!
     
     
-    var taskSummaryBasicDatas : [taskSummaryBasicData] =
-    [taskSummaryBasicData(taskID: "zxzabsd",priority: "Immediate",location: "Nungumbakam"),
-     taskSummaryBasicData(taskID: "3vXrXv",priority: "Normal",location: "Chengalpet"),
-     taskSummaryBasicData(taskID: "4yyy5if",priority: "Normal",location: "Triplicane"),
-     taskSummaryBasicData(taskID: "dy65vko",priority: "Normal",location: "Mylapore"),
-     taskSummaryBasicData(taskID: "dy65vko",priority: "Normal",location: "Mylapore"),
-     taskSummaryBasicData(taskID: "dy65vko",priority: "Normal",location: "Mylapore"),
-     taskSummaryBasicData(taskID: "dy65vko",priority: "Normal",location: "Mylapore"),
-     taskSummaryBasicData(taskID: "dy65vko",priority: "Normal",location: "Mylapore")
-     
-    ]
+    var taskSummaryBasicDatas : [taskSummaryBasicData] = DataModel().taskSummaryBasicDatas
 
     
     
